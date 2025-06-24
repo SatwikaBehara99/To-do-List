@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* 🌈 Fresh gradient */
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+
+
+.container {
+  background: #151515;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px #00e0ff99;
+  width: 100%;
+  max-width: 550px;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00e0ff;
+  text-shadow: 0 0 10px #00e0ff;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background: #222;
+  color: #fff;
+}
+
+button {
+  background: linear-gradient(to right, #5a00ff, #00e0ff);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00e0ff;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #222;
+  margin-bottom: 12px;
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease;
+  border-left: 6px solid transparent;
+}
+
+li.completed {
+  border-left: 6px solid #00ff88;
+  color: #aaffcc;
+  background: #153c2e;
+}
+
+li .info span {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-left: 8px;
+}
+
+.actions button {
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.filter-buttons button {
+  margin: 5px 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+}
